@@ -18,7 +18,7 @@ Workflow 1:
 """
 
 import os
-from components import (split_fa, calc_chr_size, fa_to_2bit, par_lastz, par_axt_chain, par_repeat_filler,
+from YRPyWGASuite.components import (split_fa, calc_chr_size, fa_to_2bit, par_lastz, par_axt_chain, par_repeat_filler,
                         par_chain_sort, chain_merge_sort, chain_cleaner, chain_pre_net, chain_net,
                         net_syntenic, net_class, net_filter_non_nested, net_to_axt, axt_to_maf)
 
