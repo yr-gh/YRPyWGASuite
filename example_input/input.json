@@ -1,0 +1,31 @@
+{
+    "ref_fa": "/gpfs/home/yangrui/mywd/align_mm10_mink/input/mm10.fa",
+    "query_fa": "/gpfs/home/yangrui/mywd/align_mm10_mink/input/mink.fa",
+
+    "root_dir": "/gpfs/home/yangrui/mywd/align_mm10_mink/res",
+    "log_dir": "/gpfs/home/yangrui/mywd/align_mm10_mink/log",
+
+    "lastz_params": "K=2400 L=3000 Y=9400 H=2000 O=400 E=30 T=1 --ambiguous=n --ambiguous=iupac --format=axt --allocate:traceback=1.99G",
+    "lastz_type": "lastz_32",
+
+    "axt_chain_params": "-minScore=3000 -linearGap=medium",
+
+    "chain_merge_sort.prefix": "mm10_mink",
+
+    "chain_cleaner_params": "-linearGap=medium -LRfoldThreshold=2.5 -doPairs -LRfoldThresholdPairs=10 -maxPairDistance=10000 -maxSuspectScore=100000 -minBrokenChainScore=75000",
+
+    "chain_net_params": "-rescore -linearGap=medium",
+    "chain_net.ref_prefix": "mm10",
+    "chain_net.query_prefix": "mink",
+
+    "net_class_params": "-noAr",
+    "net_class.ref_db": "mm10",
+    "net_class.query_db": "slbminkdb",
+
+    "net_filter_non_nested_params": "-doUCSCSynFilter -keepSynNetsWithScore 5000 -keepInvNetsWithScore 5000",
+
+    "axt_to_maf.ref_prefix": "mm10",
+    "axt_to_maf.query_prefix": "mink",
+
+    "concurrent_jobs": 20
+}

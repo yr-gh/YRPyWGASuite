@@ -1,0 +1,7 @@
+#PBS -N run_block_before_netclass
+#PBS -l nodes=1:ppn=22
+#PBS -l walltime=300:00:00
+#PBS -V
+
+/gpfs/home/yangrui/mywd/align_mm10_mink/src/run_block_before_netclass.py &> /gpfs/home/yangrui/mywd/align_mm10_mink/log/run_block_before_netclass.log
+
