@@ -24,8 +24,8 @@
 
     "net_filter_non_nested_params": "-doUCSCSynFilter -keepSynNetsWithScore 5000 -keepInvNetsWithScore 5000",
 
-    "axt_to_maf.ref_prefix": "mm10",
-    "axt_to_maf.query_prefix": "mink",
+    "axt_to_maf.ref_prefix": "mm10.",
+    "axt_to_maf.query_prefix": "mink.",
 
     "concurrent_jobs": 20
 }
